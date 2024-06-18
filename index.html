@@ -145,9 +145,9 @@
         <h1>Logistics</h1>
         The workshop will be held entirely in <i>Korean</i>.
         The location is KAIST Seoul Campus, Room 1114 (Kim Dong-Myoung Lecture Room).
-        <!-- You are free to attend the workshop, but you will have to take care of lunch on your own if you haven't registered. -->
-        <!-- <s>If you are interested in attending, please fill this <a href="https://forms.gle/CcDUj8XtF2HrrUDo8">Google Form</a> out ASAP!</s> -->
-        If you are interested in attending, please fill this <a href="https://forms.gle/CcDUj8XtF2HrrUDo8">Google Form</a> out <b>by 06.17 (Mon)</b> for lunch and coffees!
+        You are free to attend the workshop, but you will have to take care of lunch on your own if you haven't registered.
+        <s>If you are interested in attending, please fill this <a href="https://forms.gle/CcDUj8XtF2HrrUDo8">Google Form</a> out ASAP!</s>
+        <!-- If you are interested in attending, please fill this <a href="https://forms.gle/CcDUj8XtF2HrrUDo8">Google Form</a> out <b>by 06.17 (Mon)</b> for lunch and coffees! -->
         <br>
         For <b>speakers</b>:
         <ul>
@@ -188,7 +188,7 @@
         <tr>
             <td>10:30 - 11:10</td>
             <td><b><a href="https://dabeenl.github.io/">Dabeen Lee</a></b><br>Assistant Professor<br><a href="https://ie.kaist.ac.kr/">KAIST ISysE</a></td>
-            <td><h3>TBD</h3></td>
+            <td><h3>Reinforcement Learning for Infinite-Horizon Average-Reward MDPs with Multinomial Logistic Function Approximation</h3></td>
         </tr>
         <tr>
             <td>11:10 - 11:20</td>
@@ -258,30 +258,29 @@
 <h1>Speaker Bios & Talk Abstracts</h1>
         <div class="session-box">
             <div class="session-info">
-                <h3>Talk #1 (Dabeen Lee): <a href="">TBD </a></h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Dabeen Lee is ... </p>
+                <h3>Talk #1 (Dabeen Lee): <a href="">Reinforcement Learning for Infinite-Horizon Average-Reward MDPs with Multinomial Logistic Function Approximation </a></h3>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
-                <p> TBD.</p>
+                <p> We study model-based reinforcement learning with non-linear function approximation where the transition function of the underlying Markov decision process (MDP) is given by a multinomial logistic model, and we consider the infinite-horizon average reward setting.
+                    Our first algorithm \texttt{UCRL2-MNL} applies to the class of communicating MDPs and achieves an $\tilde{\mathcal{O}}(dD\sqrt{T})$ regret, where $d$ is the dimension of feature mapping, $D$ is the diameter of the underlying MDP, and $T$ is the horizon.
+                    The second algorithm \texttt{OVIFH-MNL} is computationally more efficient and applies to the more general class of weakly communicating MDPs, for which we show a regret guarantee of $\tilde{\mathcal{O}}(d^{2/5} \mathrm{sp}(v^*)T^{4/5})$ where $\mathrm{sp}(v^*)$ is the span of the associated optimal bias function.
+                    We also prove a lower bound of $\Omega(d\sqrt{DT})$ for learning communicating MDPs with diameter at most $D$.
+                    Furthermore, we show a regret lower bound of $\Omega(dH^{3/2}\sqrt{K})$ for learning $H$-horizon episodic MDPs with MNL function approximation where $K$ is the number of episodes, which improves upon the best-known lower bound for the finite-horizon setting.
+                    This is based on joint work with Jaehyun Park (KAIST)</p>
+            </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Dabeen Lee is an Assistant Professor in the Department of Industrial and Systems Engineering (ISE) at KAIST.
+                    He obtained his Ph.D. in the Algorithms, Combinatorics, and Optimization (ACO) program at the Tepper School of Business at Carnegie Mellon University.
+                    He received the IBS Young Scientist Fellowship (YSF) and won Second Place in the INFORMS Optimization Society Best Student Paper Prize Competition in 2019.
+                    His research interests are in designing algorithms and mathematical programming frameworks for broad areas of optimization and machine learning. </p>
             </div>
         </div>
 
         <div class="session-box">
             <div class="session-info">
                 <h3>Talk #2 (Yeoneung Kim): <a href="https://arxiv.org/abs/2405.19380">Approximate Thompson Sampling for Learning Linear Quadratic Regulators with $O(\sqrt{T})$ Regret </a></h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Yeoneung Kim is an Assistant Professor in the Department of Applied Artificial Intelligence at SeoulTech. 
-                    He received a B.S. in Mathematics from POSTECH and a Ph.D. in Mathematics from the University of Wisconsin-Madison in 2011 and 2019. 
-                    Before joining SeoulTech, he was a Researcher at the National Institute for Mathematical Sciences (2013 - 2016), 
-                    a Staff Engineer at Samsung Electronics (2019-2021), a BK21 Postdoctoral Researcher at SNU (2021 - 2022), 
-                    and an Assistant Professor in the Department of Financial Mathematics at Gachon University (2022-2023). 
-                    His research focuses on optimal control and reinforcement learning. </p>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -294,17 +293,20 @@
                     This is joint work with Gihun Kim (SNU ECE) and Insoon Yang (SNU ECE), and is based on the recent preprint of the <a href="https://arxiv.org/abs/2405.19380">same title</a>.
                 </p>
             </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Yeoneung Kim is an Assistant Professor in the Department of Applied Artificial Intelligence at SeoulTech. 
+                    He received a B.S. in Mathematics from POSTECH and a Ph.D. in Mathematics from the University of Wisconsin-Madison in 2011 and 2019. 
+                    Before joining SeoulTech, he was a Researcher at the National Institute for Mathematical Sciences (2013 - 2016), 
+                    a Staff Engineer at Samsung Electronics (2019-2021), a BK21 Postdoctoral Researcher at SNU (2021 - 2022), 
+                    and an Assistant Professor in the Department of Financial Mathematics at Gachon University (2022-2023). 
+                    His research focuses on optimal control and reinforcement learning. </p>
+            </div>
         </div>
 
         <div class="session-box">
             <div class="session-info">
                 <h3>Talk #3 (Kwang-Sung Jun): Noise-Adaptive Confidence Sets for Linear Bandits </h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Kwang-Sung Jun is an Assistant Professor in the Department of Computer Science at the University of Arizona.
-                    His research interest is interactive machine learning, especially theoretical aspects of bandit problems, online learning, and confidence bounds. 
-                </p>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -322,19 +324,18 @@
                     This is joint work with Jungtaek Kim (Univ. of Pittsburg) and is based on the recently accepted ICML'24 paper of the <a href="https://arxiv.org/abs/2402.07341">same title</a>.
                 </p>
             </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Kwang-Sung Jun is an Assistant Professor in the Department of Computer Science at the University of Arizona.
+                    His research interest is interactive machine learning, especially theoretical aspects of bandit problems, online learning, and confidence bounds. 
+                </p>
+            </div>
+
         </div>
 
         <div class="session-box">
             <div class="session-info">
                 <h3>Talk #4 (Se-Young Yun): From Logistic Bandits to Generalized Linear Bandits: Journey on Improving $S$-dependency</h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Se-Young Yun is an Associate Professor at the Graduate School of AI, KAIST, in Seoul, South Korea. 
-                    He holds a Ph.D. in Electrical Engineering from KAIST in 2012, where he also completed his B.S in 2006 <em>summa cum laude</em>. 
-                    Before joining KAIST, he was a researcher at KTH, Inria, Microsoft Research Cambridge, and Los Alamos National Lab.
-                    His research focuses on machine learning, particularly on the dynamics of evolving knowledge, enhancing reasoning in small models, and improving instruction robustness. 
-                    He has been recognized with multiple awards, including Outstanding Reviewer Award at NIPS 2016 and Best Paper Award at ACM MobiHoc 2013. </p>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -348,16 +349,19 @@
                     </ul>
                 </p>
             </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Se-Young Yun is an Associate Professor at the Graduate School of AI, KAIST, in Seoul, South Korea. 
+                    He holds a Ph.D. in Electrical Engineering from KAIST in 2012, where he also completed his B.S in 2006 <em>summa cum laude</em>. 
+                    Before joining KAIST, he was a researcher at KTH, Inria, Microsoft Research Cambridge, and Los Alamos National Lab.
+                    His research focuses on machine learning, particularly on the dynamics of evolving knowledge, enhancing reasoning in small models, and improving instruction robustness. 
+                    He has been recognized with multiple awards, including Outstanding Reviewer Award at NIPS 2016 and Best Paper Award at ACM MobiHoc 2013. </p>
+            </div>
         </div>
 
         <div class="session-box">
             <div class="session-info">
                 <h3>Talk #5 (Min-hwan Oh): Lasso Bandit with Compatibility Condition on Optimal Arm </h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Min-hwan Oh is an Assistant Professor in the Graduate School of Data Science at Seoul National University. 
-                    His research interests are in sequential decision making under uncertainty including bandit algorithms and reinforcement learning, statistical machine learning, and optimization. </p>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -367,16 +371,17 @@
                     To our knowledge, the proposed algorithm requires the weakest assumptions among Lasso bandit algorithms under a single parameter setting that achieve $O(\mathrm{poly} \log dT)$ regret. 
                     This is a joint work with Harin Lee and Taehyun Hwang from SNU and is based on the recent preprint of the <a href="https://arxiv.org/abs/2406.00823">same title.</a></p>
             </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Min-hwan Oh is an Assistant Professor in the Graduate School of Data Science at Seoul National University. 
+                    His research interests are in sequential decision making under uncertainty including bandit algorithms and reinforcement learning, statistical machine learning, and optimization. </p>
+            </div>
+
         </div>
 
         <div class="session-box">
             <div class="session-info">
                 <h3>Talk #6 (Kyungjae Lee): Optimal Algorithms for Multi-Armed Bandits with Heavy-Tailed Rewards</h3>
-            </div>
-            <div class="speaker-bio">
-                <h4>Speaker Bio:</h4>
-                <p> Kyungjae Lee is currently an Assistant Professor in the Department of Artificial Intelligence at Chung-Ang University. 
-                    His current research interests include multi-armed bandit, Bayesian optimization, reinforcement learning, and its application. </p>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -387,6 +392,12 @@
                     Recently, I extended these approaches to distributional settings, further enhancing their applicability and performance.
                 </p>
             </div>
+            <div class="speaker-bio">
+                <h4>Speaker Bio:</h4>
+                <p> Kyungjae Lee is currently an Assistant Professor in the Department of Artificial Intelligence at Chung-Ang University. 
+                    His current research interests include multi-armed bandit, Bayesian optimization, reinforcement learning, and its application. </p>
+            </div>
+
         </div>
 
         <!-- Add more session-box divs for additional sessions -->
