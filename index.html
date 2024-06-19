@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <meta property="og:title" content="AI Safety Colloquium">
-    <meta property="og:image" content="image/colloq.png">
+    <meta property="og:title" content="Korean AI Theory Community Workshop">
+    <meta property="og:image" content="image/workshop.png">
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap)-->
@@ -118,6 +118,17 @@
                 }
             }
     </style>
+    <style>
+        .image {
+            display: grid;
+            place-items: center;
+            /* height: 100vh; Adjust height as needed */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body id="page-top">
     <!-- Navigation-->
@@ -202,7 +213,7 @@
         </tr>
         <tr class="double-line session-header">
             <td>12:00 - 14:00</td>
-            <td colspan="2"><b>Lunchtime + Coffee + Free Discussions</b><br>(<b>Lunch:</b> 교직원식당 @KAIST Seoul Campus — <i>예약예정</i>)</td>
+            <td colspan="2"><b>Lunchtime + Coffee + Free Discussions</b><br>(<b>Lunch:</b> 교직원식당 @KAIST Seoul Campus — <i>예약확정</i>)</td>
         </tr>
         <tr class="double-line session-header">
             <td colspan="3"><b>Session #2. (Chair: Min-hwan Oh)</b></td>
@@ -255,19 +266,19 @@
 </table>
 
 <br>
-<h1>Speaker Bios & Talk Abstracts</h1>
+<h1>Talk Abstracts & Speaker Bios</h1>
         <div class="session-box">
             <div class="session-info">
-                <h3>Talk #1 (Dabeen Lee): <a href="">Reinforcement Learning for Infinite-Horizon Average-Reward MDPs with Multinomial Logistic Function Approximation </a></h3>
+                <h3>Talk #1 (Dabeen Lee): Reinforcement Learning for Infinite-Horizon Average-Reward MDPs with Multinomial Logistic Function Approximation</h3>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
-                <p> We study model-based reinforcement learning with non-linear function approximation where the transition function of the underlying Markov decision process (MDP) is given by a multinomial logistic model, and we consider the infinite-horizon average reward setting.
-                    Our first algorithm \texttt{UCRL2-MNL} applies to the class of communicating MDPs and achieves an $\tilde{\mathcal{O}}(dD\sqrt{T})$ regret, where $d$ is the dimension of feature mapping, $D$ is the diameter of the underlying MDP, and $T$ is the horizon.
-                    The second algorithm \texttt{OVIFH-MNL} is computationally more efficient and applies to the more general class of weakly communicating MDPs, for which we show a regret guarantee of $\tilde{\mathcal{O}}(d^{2/5} \mathrm{sp}(v^*)T^{4/5})$ where $\mathrm{sp}(v^*)$ is the span of the associated optimal bias function.
+                <p> We study model-based reinforcement learning with non-linear function approximation where the transition function of the underlying Markov decision process (MDP) is given by a multinomial logistic (MNL) model, and we consider the infinite-horizon average reward setting.
+                    Our first algorithm $UCRL2-MNL$ applies to the class of communicating MDPs and achieves an $\tilde{O}(dD\sqrt{T})$ regret, where $d$ is the dimension of feature mapping, $D$ is the diameter of the underlying MDP, and $T$ is the horizon.
+                    The second algorithm $OVIFH-MNL$ is computationally more efficient and applies to the more general class of weakly communicating MDPs, for which we show a regret guarantee of $\tilde{O}(d^{2/5} \mathrm{sp}(v^*)T^{4/5})$ where $\mathrm{sp}(v^*)$ is the span of the associated optimal bias function.
                     We also prove a lower bound of $\Omega(d\sqrt{DT})$ for learning communicating MDPs with diameter at most $D$.
                     Furthermore, we show a regret lower bound of $\Omega(dH^{3/2}\sqrt{K})$ for learning $H$-horizon episodic MDPs with MNL function approximation where $K$ is the number of episodes, which improves upon the best-known lower bound for the finite-horizon setting.
-                    This is based on joint work with Jaehyun Park (KAIST)</p>
+                    This is based on joint work with Jaehyun Park (KAIST ISysE).</p>
             </div>
             <div class="speaker-bio">
                 <h4>Speaker Bio:</h4>
@@ -280,7 +291,7 @@
 
         <div class="session-box">
             <div class="session-info">
-                <h3>Talk #2 (Yeoneung Kim): <a href="https://arxiv.org/abs/2405.19380">Approximate Thompson Sampling for Learning Linear Quadratic Regulators with $O(\sqrt{T})$ Regret </a></h3>
+                <h3>Talk #2 (Yeoneung Kim): Approximate Thompson Sampling for Learning Linear Quadratic Regulators with $O(\sqrt{T})$ Regret</h3>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
@@ -321,7 +332,7 @@
                     Both of our confidence sets rely critically on `regret equality' from online learning. 
                     Our empirical evaluation in Bayesian optimization tasks shows that our algorithms demonstrate better or comparable performance compared to existing methods.
                     <br>
-                    This is joint work with Jungtaek Kim (Univ. of Pittsburg) and is based on the recently accepted ICML'24 paper of the <a href="https://arxiv.org/abs/2402.07341">same title</a>.
+                    This is joint work with Jungtaek Kim (Univ. of Pittsburg) and is based on the recently accepted ICML 2024 paper of the <a href="https://arxiv.org/abs/2402.07341">same title</a>.
                 </p>
             </div>
             <div class="speaker-bio">
@@ -349,7 +360,7 @@
                     This is joint work with Junghyun Lee (KAIST AI) and Kwang-Sung Jun (Univ. of Arizona CS), and is based on the following two papers:
                     <ul>
                         <li><a href="https://arxiv.org/abs/2310.18554">Improved Regret Bounds of (Multinomial) Logistic Bandits via Regret-to-Confidence-Set Conversion</a> (AISTATS 2024)</li>
-                        <li>A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits (forthcoming)</li>
+                        <li>A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits (forthcoming, <b>oral</b> at ICML 2024 ARLET Workshop)</li>
                     </ul>
                 </p>
             </div>
@@ -416,8 +427,17 @@
     <br> If you are interested in talking about anything (research, workshop, etc), feel free to contact me! Also, I'm planning to make this into a series of workshops! If you are interested, please let me know!</p>
     </div>
 </div>
+<br>
+<div class="image">
+    <h1>For Visitors</h1>
+    <p>서울특별시 동대문구 회기로 85 (한국과학기술원(KAIST) 홍릉캠퍼스) 1호관 1114호</p>
+    <p>주차는 무료입니다.</p>
+    <img src="image/약도.jpeg" alt="오시는 길 약도" width="800">
+</div>
 
-
+<br>
+<br>
+<br>
 <div class="footer">
     <p>This website format is copied from the website of <a href="https://kim-minseon.github.io/colloquium.html">KAIST AI Safety Colloquium</a> organized by <a href="https://kim-minseon.github.io/">Minseon Kim</a>, to whom the organizer is indebted to.</p>
   </div>
