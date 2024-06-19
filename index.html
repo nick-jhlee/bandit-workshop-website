@@ -220,7 +220,7 @@
         <tr>
             <td>14:50 - 15:30</td>
             <td><b><a href="http://osi.kaist.ac.kr/">Se-Young Yun</a></b><br>Associate Professor<br><a href="https://gsai.kaist.ac.kr/">KAIST AI</a></td>
-            <td><h3>From Logistic Bandits to Generalized Linear Bandits: Journey on Improving $S$-dependency</h3>
+            <td><h3> Confidence Set Analysis in Preference Feedback </h3>
             </td>
         </tr>
         <tr class="double-line session-header">
@@ -335,17 +335,21 @@
 
         <div class="session-box">
             <div class="session-info">
-                <h3>Talk #4 (Se-Young Yun): From Logistic Bandits to Generalized Linear Bandits: Journey on Improving $S$-dependency</h3>
+                <h3>Talk #4 (Se-Young Yun): Confidence Set Analysis in Preference Feedback </h3>
             </div>
             <div class="abstract">
                 <h4>Abstract:</h4>
                 <p> 
-                    TBD
+                    Learning from Human Feedback has recently garnered considerable interest, especially with the advent of ChatGPT, which aligns with human preferences through Reinforcement Learning from Human Feedback (RLHF).
+                    In the context of the Bradley-Terry model, feedback is modeled as a logistic bandit problem, a common approach for capturing user preferences, such as click versus no-click in advertisement recommendation systems.
+                    Previous research often neglects dependencies in $S$, the norm of the unknown parameter vector, which becomes a significant issue when $S$ is large.
+                    We first introduce <i>Regret-to-Confidence Set Conversion (R2CS)</i>, which constructs a convex, Likelihood Ratio-based Confidence Set solely based on the existence of an online learning algorithm with a regret guarantee.
+                    The novel confidence sets result in the optimal regret for the logistic bandits.
                     <br>
                     This is joint work with Junghyun Lee (KAIST AI) and Kwang-Sung Jun (Univ. of Arizona CS), and is based on the following two papers:
                     <ul>
                         <li><a href="https://arxiv.org/abs/2310.18554">Improved Regret Bounds of (Multinomial) Logistic Bandits via Regret-to-Confidence-Set Conversion</a> (AISTATS 2024)</li>
-                        <li>A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits (arXiv 2024)</li>
+                        <li>A Unified Confidence Sequence for Generalized Linear Models, with Applications to Bandits (forthcoming)</li>
                     </ul>
                 </p>
             </div>
